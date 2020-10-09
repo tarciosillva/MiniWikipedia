@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MiniWikipedia</title>
+</head>
+<body>
+    <header id="menu">
+       <nav id="itens-menu">
+        <a href="#texto1">Definição | </a>
+        <a href="#caracteristicas">Características | </a>
+        <a href="#ferramentas">Ferramentas de desenvolvimento | </a>
+        <a href="#exemplo">Exemplo de código | </a>
+        <a href="#video">Vídeo curto explicativo | </a>
+        <a href="#referencias">Referências</a>
+       </nav>
+    </header>
+
+    <hr/>
+    <p><b>Seguem os tópicos</b></p>
+
+    <article>
+        <section id="definicao">
+            <h2 id="texto1">Definição</h2>
+            <p>JavaScript® (às vezes abreviado para JS) é uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe, 
+                mais conhecida como a linguagem de script para páginas Web, mas usada também em vários outros ambientes sem browser, 
+                tais como node.js,  Apache CouchDB e Adobe Acrobat. O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica,
+                 suportando estilos de orientação a objetos, imperativos e declarativos. O padrão JavaScript é ECMAScript <a href="#ref1"><sup>[1]</sup></a></p>
+
+            <p>Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web. JavaScript permite páginas da Web interativas e, 
+                portanto, é uma parte essencial dos aplicativos da web. A grande maioria dos sites usa, e todos os principais navegadores têm um 
+                mecanismo JavaScript dedicado para executá-lo. <a href="#ref2"><sup>[2]</sup></a></p>
+
+            <a href="#menu">Voltar</a>
+            <hr/>
+        </section>
+
+        <section id="caracteristicas">
+            <h2 id="texto2">Características</h2>
+            <b>Baseada em objetos</b>
+            <p>Devido a essa característica, não se torna complicado para o usuário se adaptar a essa linguagem.
+                A grande parte das propriedades de um objeto na linguagem JavaScript pode ser enumerada por meio de uma estrutura baseada em repetição “for… in…”.</p>
+
+            <b>Imperativa e Estruturada</b>
+            <p>JavaScript suporta os elementos de sintaxe de programação estruturada da linguagem C como, por exemplo, <code>if</code>, 
+                <code>while</code>, <code>switch</code>. Uma exceção é a questão do escopo: o escopo em blocos ao estilo do C não é suportado. 
+                Em seu lugar, JavaScript utiliza escopo a nível de função. JavaScript 1.7, entretanto, suporta escopo a nível de bloco através do comando <code>let</code>. 
+                Como C, JavaScript faz distinção entre expressões e comandos. Uma diferença sintática do C é que a quebra de linha termina automaticamente o comando, 
+                sendo o ponto-e-vírgula opcional ao fim de uma instrução.</p>
+
+            <b>Funcionalidade</b>
+            <p>A linguagem JavaScript apresenta funções de primeira classe, funções aninhadas e fechamentos. Cada uma delas conta com as suas características específicas.</p>
+
+            <b>Versatilidade</b>
+            <p>Pode ser aplicada em projetos em Desktop e também para dispositivos móveis. Atualmente, em que a tecnologia mobile é importante para o êxito de muitos projetos web,
+                 o JavaScript ganha ainda mais relevância.<a href="#ref3"><sup>[3]</sup></a></p>
+
+            <b>Avaliação em tempo de execução</b>    
+            <p>JavaScript inclui a função eval que consegue executar em tempo de execução comandos da linguagem que estejam escritos em uma string.</p>
+
+            <a href="#menu">Voltar</a>
+            <hr/>
+        </section>
+
+        <section id="ferramentas">
+            <h2 id="texto3">Ferramentas de desenvolvimento</h2>
+            <p>Dentro do JavaScript, o acesso a um depurador se torna inestimável ao desenvolver programas grandes e não triviais. Pode haver diferenças 
+                de implementação entre os vários navegadores (especialmente dentro do DOM), portanto, é útil ter acesso a um depurador para cada um dos
+                 navegadores que um aplicativo Web tem como destino<a href="#ref4"><sup>[4]</sup></a></p>
+
+            <p>Os depuradores de scripts são integrados em muitos navegadores comuns, como o Internet Explorer, o Firefox, o Safari, o Google Chrome, 
+                o Opera e o Node.js. Em comparação com o Internet Explorer, o Firefox tem um conjunto mais abrangente de ferramentas para desenvolvedores, 
+                que inclui também um depurador. Versões antigas do Firefox sem essas ferramentas usavam um addon do Firefox chamado Firebug, ou o antigo
+                 depurador do Venkman. O Web Inspector WebKit inclui um depurador JavaScript que é usado no Safari<a href="#ref5"><sup>[5]</sup></a> <a href="#ref5"><sup>[6]</sup></a></p>
+
+            <a href="#menu">Voltar</a>
+            <hr/>
+        </section>
+
+        <section id="exemplo">
+            <h2 id="texto4">Exemplo de código</h2>
+            <b>Código simples</b>
+
+            <div id="code" style="background-color: #f8f9fa; font-family: monospace,monospace; margin: 20px 0">
+                <span style="color: #008000;"><b>if</b></span>
+                <span> ( confirm( <span style="color:orangered">'Escolha "Ok" ou "Cancelar" para ver a mensagem correspondente.'</span> ) ) {<br/></span>
+                <span>&ensp;alert( <span style="color: orangered;">'Você apertou o botão "OK"'</span>);<br/></span>
+                <span>} <span style="color: #008000;"><b>else</b></span>{<br/></span>
+                <span>&ensp;alert(<span style="color: orangered;">'Você apertou o botão "Cancelar"'</span>);<br/></span>
+                <span>}</span>
+            </div>
+
+            <b>Comentários</b>
+            <div id="code" style="background-color: #f8f9fa; font-family: monospace,monospace; font-style: italic; margin: 20px 0;">
+                <span style="color: #008000;">// Exemplo de comentário</span>
+                <br/><br/>
+                <span style="color: #008000;">/* Já este comentário<br/>
+                    é mais longo e utiliza<br/>
+                    várias linhas */
+                </span>
+            </div>
+
+            <b>Funções</b>
+            <div id="code" style="background-color: #f8f9fa; font-family: monospace,monospace; margin: 20px 0;">
+                <span style="color: #008000;"><b>function</b></span>&ensp;<span>nomeDaFuncao(<span style="color: #008000; font-style: italic;">/*parâmetros*/</span>){<br/></span>
+                <span style="color: #008000;font-style: italic;">&ensp;/*código que será executado*/</span>
+                <br/><br/>
+                
+                <span style="color: #008000;">&ensp;<b>return</b></span>
+                <span style="color: #008000;font-style: italic;">&ensp;/*valor retornado*/<br/></span>
+                <span>}</span>
+            </div>
+
+            <b>Hierarquia do objeto</b>
+            <div id="code" style="background-color: #f8f9fa; font-family: monospace,monospace; margin: 20px 0;">
+                <span style="color: #008000;font-style: italic;">//Construtor<br/></span>
+                <span style="color: #008000;font-style: italic;">//Construtor<br/></span>
+
+                <span style="color: #008000;"><b>function</b></span>&ensp;<span>Exemplo(){<br/></span>
+                <span style="color: #008000;">&ensp;&ensp;&ensp;&ensp;<span><b>this</b></span></span><span>.propriedade = <span style="color: orangered;">'Isso é uma propriedade.'</span>,<br/></span>
+                <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<span style="color: #008000;"><b>this</b></span></span><span>.metodo = <span style="color: #008000;"><b>function</b></span>){<br/></span>
+                <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<span style="color: #008000;">return</span><span style="color: orangered;">'Isso é um metódo'</span>;<br/></span>
+                <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;}<br/></span>
+                <span>}</span>
+
+                <br/><br/>
+
+                <span style="color: #008000;"><b>var</b>&ensp;</span><span>objeto =&ensp;</span><span style="color: #008000;"><b>new</b> </span> <span>Exemplo();</span>
+
+                <br/><br/>
+                <span>alert(objeto.propriedade),<br/></span>
+                <span>&ensp;&ensp;&ensp;&ensp;alert(objeto.metodo());</span>
+            </div>
+
+            <a href="#menu">Voltar</a>
+            <hr/>
+        </section>
+
+        <section id="video">
+            <h2 id="texto5">Vídeo curto explicativo</h2>
+
+            <video poster="/Capturar.JPG" width="800" height="450" controls>
+                <source src="/javascript.mp4" type="video/mp4">
+                    Seu browser não suporta esta tag de vídeo 
+            </video>
+
+            <div><a href="#menu">Voltar</a></div>
+            <hr/>
+        </section>
+
+        <section id="referencias">
+            <h2 id="texto1">Referências</h2>
+            <ol>
+                <li id="ref1">MDN web docs. 
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JavaScript</a>
+                </li>
+                <li id="ref2">Silva, Giancarlo (28 de janeiro de 2015). 
+                    <a href="https://canaltech.com.br/internet/O-que-e-e-como-funciona-a-linguagem-JavaScript/">O que é e como funciona a linguagem JavaScript?</a>
+                </li>
+                <li id="ref3">Portal N10. 
+                    <a href="https://oportaln10.com.br/conhecas-as-principais-caracteristicas-do-javascript-86379/">Conheça as principais características do JavaScript</a>
+                </li>
+                <li id="ref4">Steen, Chris Mills, Hallvord R. M.
+                    <a href="http://alistapart.com/article/advanced-debugging-with-javascript">Advanced Debugging With JavaScript</a>
+                </li>
+                <li id="ref5">programmer, Scott Orgera Scott Orgera has been a tech journalist since 2007 He has 25+ years' experience as a; leader, Q. A.; 
+                    certifications, several Microsoft.
+                    <a href="https://www.lifewire.com/activate-the-debug-console-in-safari-445798">Activate the Debugging Console or Web Inspector in Safari for iPhone</a>
+                </li>
+                <li id="ref6">WebKit.
+                    <a href="https://webkit.org/blog/61/introducing-drosera/">Introducing Drosera</a>
+                </li>
+            </ol>
+
+            <a href="#menu">Voltar</a>
+            <hr/>
+        </section>
+    </article>
+
+    <style>
+        #itens-menu a{
+            font-size: 20px;
+        }
+        code {
+            color: #000;
+            background-color: #f8f9fa;
+            border: 1px solid #eaecf0;
+            border-radius: 2px;
+            padding: 1px 4px;
+        }
+
+    </style>
+   
+    
+</body>
+</html>
